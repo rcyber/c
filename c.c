@@ -4,7 +4,7 @@ int main() {
     int x = !5;
 
     if(!x) {
-        puts("Hello");
+        printf("Hello");
     }
 
     return 0;
