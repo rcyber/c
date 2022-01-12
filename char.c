@@ -1,11 +1,12 @@
 #include <stdio.h>
 int main(void){
 
-
 char word[] = {'h','e','l','l','o'};
-char w[] = "hwwwllel";
-printf("%s", word);
-printf("\n");
+char w[] = "hww";
+
+printf("%s\n", word);
+
 printf("%s\n",w);
+
 return 0;
 }

@@ -5,6 +5,7 @@ int main(void)
  
  char name[10];
  int age ;
+
  printf("Hello. What is youre name?\n");
  scanf("%s", &name);
  printf("Ok %s. How old are you?\n", name);
