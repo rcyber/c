@@ -1,11 +1,24 @@
-#include <stdio.h> 
+ #include <stdio.h>
+ int main() {
+    int n=3, i, j;
+     //scanf_s("%d", &n);
+    int a[n];
+    // считываем количество чисел n
 
-int main() {
-    int x = !5;
-
-    if(!x) {
-        printf("Hello");
+    // формируем массив n чисел
+    for(i = 0 ; i < n; i++) { 
+        scanf("%d", &a[i]);
     }
-
-    return 0;
-}
+    for(i = 0 ; i < n - 1; i++) { 
+       // сравниваем два соседних элемента.
+       for(j = 0 ; j < n - i - 1 ; j++) {  
+           if(a[j] > a[j+1]) {           
+              // если они идут в неправильном порядке, то  
+              //  меняем их местами. 
+              int tmp = a[j];
+              a[j] = a[j+1] ;
+              a[j+1] = tmp; 
+           }
+        }
+    }
+ }
